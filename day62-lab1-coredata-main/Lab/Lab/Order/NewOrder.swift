@@ -2,7 +2,7 @@
 //  NewOrder.swift
 //  Lab
 //
-//  Created by sally asiri on 19/05/1443 AH.
+//  Created by  sally asiri on 19/05/1443 AH.
 //
 
 
@@ -27,7 +27,7 @@ class NewOrder: UIViewController, UITextFieldDelegate {
         tf.translatesAutoresizingMaskIntoConstraints = false
         tf.placeholder = NSLocalizedString("", comment:"  ")
         tf.backgroundColor = .white
-        tf.textAlignment = .right
+        tf.textAlignment = .left
         tf.delegate = self
         tf.layer.cornerRadius = 20
         return tf
@@ -38,7 +38,7 @@ class NewOrder: UIViewController, UITextFieldDelegate {
         tf.translatesAutoresizingMaskIntoConstraints = false
         tf.placeholder = NSLocalizedString("", comment:"   ")
         tf.backgroundColor = .white
-        tf.textAlignment = .right
+        tf.textAlignment = .left
         tf.delegate = self
         tf.layer.cornerRadius = 20
         return tf
@@ -48,7 +48,7 @@ class NewOrder: UIViewController, UITextFieldDelegate {
         tf.translatesAutoresizingMaskIntoConstraints = false
         tf.placeholder = NSLocalizedString("", comment:"   ")
         tf.backgroundColor = .white
-        tf.textAlignment = .right
+        tf.textAlignment = .left
         tf.delegate = self
         tf.layer.cornerRadius = 20
         return tf
@@ -60,7 +60,7 @@ class NewOrder: UIViewController, UITextFieldDelegate {
         b.setTitle(NSLocalizedString("add", comment:""), for: .normal)
         b.titleLabel?.font = UIFont(name: "Avenir-Light", size: 27.0)
         b.layer.cornerRadius = 25
-        b.backgroundColor = UIColor(red: (87/255), green: (107/255), blue: (96/255), alpha: 1)
+        b.backgroundColor = #colorLiteral(red: 0.456104815, green: 0.4669560194, blue: 0.3778538704, alpha: 1)
         return b
     }()
     
@@ -116,7 +116,7 @@ class NewOrder: UIViewController, UITextFieldDelegate {
    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .gray
+        view.backgroundColor = #colorLiteral(red: 0.8983877897, green: 0.9943487048, blue: 0.7077040076, alpha: 1)
         
         
         TF1.text = b?.status

@@ -35,7 +35,7 @@ class NewLifeTime: UIViewController, UITextFieldDelegate {
         tf.translatesAutoresizingMaskIntoConstraints = false
         tf.placeholder = NSLocalizedString("", comment:"  ")
         tf.backgroundColor = .white
-        tf.textAlignment = .right
+        tf.textAlignment = .left
         tf.delegate = self
         tf.layer.cornerRadius = 20
         return tf
@@ -46,7 +46,7 @@ class NewLifeTime: UIViewController, UITextFieldDelegate {
         tf.translatesAutoresizingMaskIntoConstraints = false
         tf.placeholder = NSLocalizedString("", comment:"   ")
         tf.backgroundColor = .white
-        tf.textAlignment = .right
+        tf.textAlignment = .left
         tf.delegate = self
         tf.layer.cornerRadius = 20
         return tf
@@ -56,7 +56,7 @@ class NewLifeTime: UIViewController, UITextFieldDelegate {
         tf.translatesAutoresizingMaskIntoConstraints = false
         tf.placeholder = NSLocalizedString("", comment:"   ")
         tf.backgroundColor = .white
-        tf.textAlignment = .right
+        tf.textAlignment = .left
         tf.delegate = self
         tf.layer.cornerRadius = 20
         return tf
@@ -68,7 +68,7 @@ class NewLifeTime: UIViewController, UITextFieldDelegate {
         b.setTitle(NSLocalizedString("add", comment:""), for: .normal)
         b.titleLabel?.font = UIFont(name: "Avenir-Light", size: 27.0)
         b.layer.cornerRadius = 25
-        b.backgroundColor = UIColor(red: (87/255), green: (107/255), blue: (96/255), alpha: 1)
+        b.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.7921782235)
         return b
     }()
     
@@ -129,7 +129,7 @@ class NewLifeTime: UIViewController, UITextFieldDelegate {
    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .gray
+        view.backgroundColor = #colorLiteral(red: 0.8983877897, green: 0.9943487048, blue: 0.7077040076, alpha: 1)
         
         
         TF1.text = b?.shipInstructions
